@@ -1,4 +1,5 @@
 # Exposé
+Von Franziska Reuschenbach und Emely Grin
 
 ## Darstellung des Problemraums
 
