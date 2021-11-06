@@ -50,5 +50,5 @@ https://stroke-owl.de/fileadmin/files/stroke/Downloads/Fact_Sheet_Patient_Depres
 
  
 # Projektplan 
-<img width="576" alt="Frame 1richtigProjektplan1 (1)" src="https://user-images.githubusercontent.com/74180059/139046065-b87465f1-af95-42bf-a429-ef3651976552.png">
+<img width="974" alt="Frame 2ppp" src="https://user-images.githubusercontent.com/74180059/140606224-5a8b12ca-4934-43c3-839d-616f5e8d257e.png">
 
