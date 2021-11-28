@@ -1,5 +1,8 @@
-# Exposé: Herleitung des Nutzungsproblems
-Von Franziska Reuschenbach und Emely Grin
+# Animation der Schlaganfall Ring Box
+Ein Entwicklungsprojket von Franziska Reuschenbach und Emely Grin.
+Der Schlaganfall Ring ist ein Verein, an den sich Betroffene und Angheörige wenden können. Diese stellt eine Box mit Karten zur Vefrügung, damit Patienten ihre Defizite erkennen und priorisieren können und Therapiepläne angepasst werden und die Kommunikation mit den Ärzten vereinfacht wird. (https://www.schlaganfall-ring.de/schlaganfall-ring-box/)
+Aber Schlaganfall Patienten können auf Grund der Folgen (mangelnde Konzentratiosfähikeit,Schwierigkeiten Texte zu lesen und zu verstehen, usw.), die Karten nicht verstehen/ lesen. Weshalb eine Animation der Karten dieses Problem lösen soll. 
+## Exposé: Herleitung des Nutzungsproblems
 
 ## Darstellung des Problemraums
 
