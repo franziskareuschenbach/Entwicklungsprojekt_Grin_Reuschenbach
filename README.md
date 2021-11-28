@@ -22,6 +22,7 @@ Die dargestellte Concept-Map zeigt die Domäne in der das zu entwickelte System 
 
 
 ![Domänenmodell](https://user-images.githubusercontent.com/74180059/137636604-259e8848-efb4-4923-93e3-8a016f622dfc.jpg)
+![Domänenmodell (7)](https://user-images.githubusercontent.com/74180059/143772566-970f0f0d-4dd6-48ed-8f90-e8c9541052e2.jpg)
 
 
 ## Zielsetzung / Vision 
@@ -50,6 +51,7 @@ https://stroke-owl.de/fileadmin/files/stroke/Downloads/Fact_Sheet_Patient_Depres
 
  
 # Projektplan 
-<img width="974" alt="Frame 2EP PROJEKTPLAN (2)" src="https://user-images.githubusercontent.com/74180059/140655115-8d41a71a-7745-41fd-abff-cad6fc58d3e9.png">
+
+<img width="876" alt="Frame 2EP PROJEKTPLAN (5)" src="https://user-images.githubusercontent.com/74180059/143772541-5a5aaaeb-00b9-4f62-be76-e5ceb1a6414a.png">
 
 
