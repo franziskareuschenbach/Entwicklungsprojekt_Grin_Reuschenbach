@@ -1,4 +1,4 @@
-# Exposé
+# Exposé: Herleitung des Nutzungsproblems
 Von Franziska Reuschenbach und Emely Grin
 
 ## Darstellung des Problemraums
