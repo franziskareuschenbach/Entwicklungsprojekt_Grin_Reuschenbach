@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt/EP_Code/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt/EP_Code/app/src/main/res/drawable/button_bg_round.xml" value="0.259375" />
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt/EP_Code/app/src/main/res/drawable/roundbutton.xml" value="0.21875" />
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt/EP_Code/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
