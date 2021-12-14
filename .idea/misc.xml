@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt_Grin_Reuschenbach/app/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt_Grin_Reuschenbach/app/src/main/res/layout/activity_meine_box.xml" value="0.15693430656934307" />
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt_Grin_Reuschenbach/app/src/main/res/layout/activity_start_video.xml" value="0.3484375" />
+        <entry key="..\:/Users/Acer/Desktop/Entwicklungsprojekt_Grin_Reuschenbach/app/src/main/res/mipmap-anydpi-v26/icd_launcher_round.xml" value="0.2078125" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

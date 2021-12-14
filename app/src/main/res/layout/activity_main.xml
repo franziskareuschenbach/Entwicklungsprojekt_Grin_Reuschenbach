@@ -37,8 +37,9 @@
         android:layout_marginBottom="138dp"
         app:srcCompat="@mipmap/logo_gross" />
 
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonMeineBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -48,6 +49,7 @@
         android:backgroundTint="#C8C8C8"
         android:text="Meine Box"
         app:backgroundTint="@null" />
+
 
 
 </RelativeLayout>
