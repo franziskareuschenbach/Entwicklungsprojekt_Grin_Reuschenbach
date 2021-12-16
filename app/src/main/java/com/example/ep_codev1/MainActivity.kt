@@ -13,44 +13,10 @@ import android.widget.VideoView
 
 class MainActivity : AppCompatActivity() {
 
-    var videoView : VideoView? = null
-
-    var mediaController : MediaController? = null
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //Video
-
-        var videoView = findViewById<View>(R.id. videoView) as VideoView?
-
-        if (mediaController == null){
-            mediaController = MediaController(this)
-            mediaController !!.setAnchorView(this.videoView)
-        }
-
-        videoView!!.setMediaController(mediaController)
-
-        videoView!!.setVideoURI(Uri.parse("android.resource://"+packageName + "/" + R.raw.animation))
-
-        videoView!!.requestFocus()
-
-        //start Video
-        videoView!!.start()
-
-        videoView!!.setOnCompletionListener {
-            Toast.makeText(applicationContext,"VideoEnd", Toast.LENGTH_LONG).show()
-        }
-
-        videoView!!.setOnErrorListener { mediaPlayer, i, i2 ->
-            Toast.makeText(applicationContext, "Error Occured", Toast.LENGTH_LONG).show()
-            false
-        }
-
 
         //Start Button auf der Startseite
         val start = findViewById<Button>(R.id.start)    // on click event
