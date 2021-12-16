@@ -1,9 +1,11 @@
 package com.example.ep_codev1
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
@@ -51,5 +53,17 @@ class Start_Video_Activity : AppCompatActivity() {
 
         actionBar.setDisplayHomeAsUpEnabled(true)
 
+        //Weiter Button unter Video Player zu PriorityActivity
+        val weiter = findViewById<Button>(R.id.buttonWeiter)
+
+        weiter.setOnClickListener {
+            val intent = Intent(this, PriorityActivity :: class.java)
+            startActivity(intent)
+        }
     }
 }
+
+
+
+
+
