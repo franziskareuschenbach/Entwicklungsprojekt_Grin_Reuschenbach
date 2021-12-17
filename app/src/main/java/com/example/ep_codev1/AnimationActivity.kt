@@ -10,7 +10,7 @@ import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
 
-class Start_Video_Activity : AppCompatActivity() {
+class AnimationActivity : AppCompatActivity() {
 
     var videoView : VideoView? = null
 
@@ -19,7 +19,7 @@ class Start_Video_Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start_video)
+        setContentView(R.layout.activity_animation)
 
         val videoView = findViewById<View>(R.id. videoView) as VideoView?
 

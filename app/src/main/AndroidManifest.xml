@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/icd_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP_CodeV1">
+
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+
         <activity
             android:name=".MeineBoxActivity"
             android:exported="false" />
@@ -22,8 +25,9 @@
             android:name=".PriorityActivity"
             android:exported="false" />
         <activity
-            android:name=".Start_Video_Activity"
-            android:exported="false" />
+            android:name=".AnimationActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -31,8 +35,10 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
