@@ -7,47 +7,46 @@ android:layout_height="match_parent"
 android:background="#28FFFFFF"
 tools:context=".MainActivity">
 
-<Button
-    android:id="@+id/start"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="233dp"
-    android:background="@drawable/button_bg_round"
-    android:padding="15dp"
-    android:text="Start"
-    app:backgroundTint="#49AD91"
-    app:iconTint="#49AD91"
-    tools:layout_editor_absoluteX="155dp"
-    tools:layout_editor_absoluteY="481dp"/>
-
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentEnd="true"
-    android:layout_alignParentBottom="true"
-    android:layout_marginStart="9dp"
-    android:layout_marginTop="-187dp"
-    android:layout_marginEnd="4dp"
-    android:layout_marginBottom="138dp"
-    app:srcCompat="@mipmap/logo_gross" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="233dp"
+        android:background="@drawable/button_bg_round"
+        android:padding="15dp"
+        android:text="Start"
+        app:backgroundTint="#49AD91"
+        app:iconTint="#49AD91"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="481dp" />
 
 
-<Button
-    android:id="@+id/buttonMeineBox"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="68dp"
-    android:background="#C8C8C8"
-    android:backgroundTint="#C8C8C8"
-    android:text="Meine Box"
-    app:backgroundTint="@null" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="-187dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="138dp"
+        app:srcCompat="@mipmap/logo_gross" />
+
+    <Button
+        android:id="@+id/buttonMeineBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#C8C8C8"
+        android:text="Meine Box"
+        app:backgroundTint="@null" />
 
 
 
