@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -22,10 +23,48 @@ class SignUpActivity : AppCompatActivity() {
         val anmelden = findViewById<Button>(R.id.buttonAnmelden)    // on click event
 
         anmelden.setOnClickListener {
-            signUpUser()
+            register()
         }
-    }
 
+        //Action Bar zurück zum Login
+        val actionBar = supportActionBar
+
+        actionBar!!.title="Sign-Up"
+
+        actionBar.setDisplayHomeAsUpEnabled(true)
+
+    }
+    fun register(){
+        val email = findViewById<EditText>(R.id.editTextTextEmailAddress)
+        if (email.text.toString().isEmpty()) {       //kein user name
+            Toast.makeText(baseContext, "Bitte email eintragen",
+                Toast.LENGTH_SHORT).show()
+        }
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()) {   //keine richtige EMAIL Adresse
+            Toast.makeText(baseContext, "Bitte eine gültige E-Mail eintragen",
+                Toast.LENGTH_SHORT).show()
+        }
+        val passwort = findViewById<EditText>(R.id.editTextTextPassword)
+        if (passwort.text.toString().isEmpty()) {
+            Toast.makeText(baseContext, "Bitte Passwort eintragen",
+                Toast.LENGTH_SHORT).show()
+        }
+
+        auth.createUserWithEmailAndPassword(email.text.toString(),passwort.text.toString()).addOnCompleteListener { task ->
+            if (task.isSuccessful){
+                startActivity(Intent(this, MainActivity :: class.java))
+                finish()
+            }
+
+        }.addOnFailureListener{ exeption ->
+            Toast.makeText(baseContext, exeption.localizedMessage,
+                Toast.LENGTH_SHORT).show()
+
+        }
+
+    }
+/*
     private fun signUpUser() {
         val email = findViewById<EditText>(R.id.editTextTextEmailAddress)
         if (email.text.toString().isEmpty()) {       //kein user name
@@ -40,7 +79,7 @@ class SignUpActivity : AppCompatActivity() {
             return
         }
 
-        var passwort = findViewById<EditText>(R.id.editTextTextPassword)
+        val passwort = findViewById<EditText>(R.id.editTextTextPassword)
         if (passwort.text.toString().isEmpty()) {
             passwort.error = "Bitte Passwort eintragen"
             passwort.requestFocus()
@@ -58,7 +97,7 @@ class SignUpActivity : AppCompatActivity() {
                 }
             }
 
-
-
     }
+
+ */
 }
