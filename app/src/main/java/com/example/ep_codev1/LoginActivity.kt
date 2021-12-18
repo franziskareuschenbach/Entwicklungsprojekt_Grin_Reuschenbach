@@ -19,11 +19,11 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        onStart()
+
 
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()        //firebase   Original: auth = Firebase.auth
-
+        //onStart()
 
         val keinAccount = findViewById<Button>(R.id.buttonKeinAccount)    // on click event
 
@@ -68,12 +68,17 @@ class LoginActivity : AppCompatActivity() {
     }
 
     ////Ist user schon eingeloggt
-    //public override fun onStart() {             //firebase
+    //public override fun onStart() {
     //    super.onStart()
     //    // Check if user is signed in (non-null) and update UI accordingly.
-    //    val currentUser = auth.currentUser       //if(currentUser != null){
-    //    updateUI(currentUser)               //  reload(); }
+    //    val currentUser = auth.currentUser
+    //    if(currentUser != null){
+    //        reload()
+    //    }
     //}
-    //fun updateUI(currentUser: FirebaseUser?) {     //musste hinzugefügt werden
+//
+    //private fun reload() {
+    //    TODO("Not yet implemented")
     //}
+
 }

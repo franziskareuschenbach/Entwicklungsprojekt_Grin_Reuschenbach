@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         start.setOnClickListener {
             //Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, AnimationActivity :: class.java))
+            startActivity(Intent(this, KarteActivity :: class.java))
         }
         val actionBar = supportActionBar
 
