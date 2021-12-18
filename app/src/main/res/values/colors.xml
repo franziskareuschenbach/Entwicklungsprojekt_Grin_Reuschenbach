@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="epgreen">#49AD91</color>
     <color name="epgrau">#C8C8C8</color>
+    <color name="epred">#D91B56</color>
+    <color name="epblue">#023059</color>
+    <color name="eplightgrey">#C8C8C8</color>
 </resources>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EP_CodeV1</string>
+    <string name="kauen_und_schlucken">Kauen und Schlucken</string>
+    <string name="frage">Frage</string>
+    <string name="haben_sie_nach_ihrem_schlaganfall_probleme_mit_dem_kauen_oder_schlucken">Haben Sie nach Ihrem Schlaganfall Probleme mit dem Kauen oder Schlucken?</string>
+    <string name="beispiel">Beispiel</string>
+    <string name="verschlucken_n_aufsto_en_n_anstregungen_beim_kauen_oder_schlucken">- Verschlucken\n- Aufstoßen \n- Anstregungen beim Kauen oder Schlucken</string>
+    <string name="j_rgen_langemeyer_2017">© Jürgen Langemeyer, 2017</string>
+    <string name="icf_b510_14">ICF: b510 14</string>
 </resources>
