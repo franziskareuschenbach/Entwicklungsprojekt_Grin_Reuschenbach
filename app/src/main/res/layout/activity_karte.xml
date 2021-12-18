@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KarteActivity">
+
+    <View
+        android:id="@+id/gr_ne_box"
+        android:layout_width="411dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/epgreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/kauen_und_s"
+        android:layout_width="223dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:gravity="top"
+        android:text="@string/kauen_und_schlucken"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/haben_sie_n"
+        android:layout_width="382dp"
+        android:layout_height="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/haben_sie_nach_ihrem_schlaganfall_probleme_mit_dem_kauen_oder_schlucken"
+        android:textColor="@color/epblue"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beispiel"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="232dp"
+        android:text="@string/beispiel"
+        android:textColor="@color/epred"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/verschlucke"
+        android:layout_width="369dp"
+        android:layout_height="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="264dp"
+        android:text="@string/verschlucken_n_aufsto_en_n_anstregungen_beim_kauen_oder_schlucken"
+        android:textColor="@color/epblue"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frage"
+        android:layout_width="66dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/frage"
+        android:textColor="@color/epred"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/logo_gross" />
+
+    <TextView
+        android:id="@+id/j_rgen_lang"
+        android:layout_width="168dp"
+        android:layout_height="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/j_rgen_langemeyer_2017"
+        android:textColor="@color/epblue"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/icf_b510_14"
+        android:layout_width="78dp"
+        android:layout_height="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/icf_b510_14"
+        android:textColor="@color/epblue"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/playerbutton"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/eplightgrey"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/player" />
+
+    <ImageButton
+        android:id="@+id/volumebutton"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/eplightgrey"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/volumehigh" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
