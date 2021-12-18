@@ -6,63 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".MeineBoxActivity">
 
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="190dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/sammlung" />
+
     <Button
         android:id="@+id/buttonDringendBox"
         android:layout_width="305dp"
         android:layout_height="56dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#DE3333"
         android:text="Dringend"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonErledigtBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonOkBox"
+        android:id="@+id/buttonErledigtBox"
         android:layout_width="305dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="216dp"
-        android:backgroundTint="#49A663"
-        android:text="Ok"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#007DF0"
+        android:text="Erledigt"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSpäterBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDringendBox" />
 
     <Button
         android:id="@+id/buttonSpäterBox"
         android:layout_width="305dp"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#B60E87"
         android:text="Später"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOkBox"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonErledigtBox" />
 
     <Button
-        android:id="@+id/buttonErledigtBox"
+        android:id="@+id/buttonOkBox"
         android:layout_width="305dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="311dp"
-        android:backgroundTint="#007DF0"
-        android:text="Erledigt"
+        android:layout_height="56dp"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#49A663"
+        android:text="Ok"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpäterBox" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
