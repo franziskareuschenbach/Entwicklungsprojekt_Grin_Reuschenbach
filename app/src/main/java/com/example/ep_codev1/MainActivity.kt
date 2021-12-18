@@ -6,6 +6,8 @@ import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.ktx.Firebase
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +21,8 @@ class MainActivity : AppCompatActivity() {
         val start = findViewById<Button>(R.id.start)    // on click event
 
         start.setOnClickListener {
-
             //Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, AnimationActivity :: class.java)
-            startActivity(intent)
+            startActivity(Intent(this, AnimationActivity :: class.java))
         }
         val actionBar = supportActionBar
 
@@ -31,8 +31,14 @@ class MainActivity : AppCompatActivity() {
         //Meine Box Button zu MeineBoxActivity
         val box = findViewById<Button>(R.id.buttonMeineBox)
         box.setOnClickListener {
-           val intent = Intent(this, MeineBoxActivity :: class.java )
-           startActivity(intent)
+           startActivity(Intent(this, MeineBoxActivity :: class.java ))
+        }
+
+        //Auslogen Button zu LogInActivity
+        val logOut = findViewById<Button>(R.id.buttonLogOut)
+        logOut.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this, LoginActivity :: class.java ))
         }
 
     }

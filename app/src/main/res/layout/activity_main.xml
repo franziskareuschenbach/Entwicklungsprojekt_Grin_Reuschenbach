@@ -8,6 +8,16 @@ android:background="#28FFFFFF"
 tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#D22D53"
+        android:text="Ausloggen"
+        app:backgroundTint="@null" />
+
+    <Button
         android:id="@+id/start"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -25,16 +35,16 @@ tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="361dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="-187dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="138dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="368dp"
         app:srcCompat="@mipmap/logo_gross" />
 
     <Button
@@ -47,8 +57,6 @@ tools:context=".MainActivity">
         android:backgroundTint="#C8C8C8"
         android:text="Meine Box"
         app:backgroundTint="@null" />
-
-
 
 </RelativeLayout>
 
