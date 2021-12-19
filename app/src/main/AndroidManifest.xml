@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/icd_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP_CodeV1">
-
+        <activity
+            android:name=".VorlesenActivity"
+            android:exported="false"/>
         <activity
             android:name=".KarteActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false"

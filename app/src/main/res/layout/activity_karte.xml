@@ -132,7 +132,7 @@
         app:srcCompat="@mipmap/player" />
 
     <ImageButton
-        android:id="@+id/volumebutton"
+        android:id="@+id/vorlesebutton"
         android:layout_width="120dp"
         android:layout_height="70dp"
         android:layout_marginEnd="252dp"
@@ -140,7 +140,7 @@
         android:backgroundTint="@color/eplightgrey"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/volumehigh" />
+        app:srcCompat="@mipmap/voicerecognition" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
