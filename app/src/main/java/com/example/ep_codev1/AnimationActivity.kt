@@ -30,7 +30,7 @@ class AnimationActivity : AppCompatActivity() {
 
         videoView!!.setMediaController(mediaController)
 
-        videoView!!.setVideoURI(Uri.parse("android.resource://"+packageName + "/" + R.raw.animation))
+        videoView!!.setVideoURI(Uri.parse("android.resource://"+packageName + "/" + R.raw.kauenundschluckenanimation))
 
         videoView!!.requestFocus()
 
