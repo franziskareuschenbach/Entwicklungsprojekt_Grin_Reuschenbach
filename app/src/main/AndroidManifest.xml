@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ep_codev1">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/srb_logo"
@@ -10,8 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EP_CodeV1">
         <activity
+            android:name=".Tutorial"
+            android:exported="false" />
+        <activity
             android:name=".VorlesenActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".KarteActivity"
             android:exported="false"

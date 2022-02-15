@@ -35,6 +35,8 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+
+
     fun login() {
         //Check ob email leer
         val email = findViewById<EditText>(R.id.editTextTextEmailAddress)

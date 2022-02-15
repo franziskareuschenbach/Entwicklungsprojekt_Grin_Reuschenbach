@@ -46,6 +46,10 @@ class AnimationActivity : AppCompatActivity() {
             false
         }
 
+        //Änderungen 15.2 Videos aus storage streamen
+        //videoView!!.setVideoURI(Uri.parse(https://firebasestorage.googleapis.com/v0/b/ep-srb.appspot.com/o/Animation%2FAnima.test2.mp4?alt=media&token=f3d74086-1f42-479f-ae19-1337c0e96c95)
+
+
         //Action Bar zurück zur Startseite
         val actionBar = supportActionBar
 
