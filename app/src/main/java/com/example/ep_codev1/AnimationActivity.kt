@@ -57,10 +57,11 @@ class AnimationActivity : AppCompatActivity() {
 
         //Action Bar zurück zur Startseite
         val actionBar = supportActionBar
+        actionBar!!.hide()
 
-        actionBar!!.title="Animation"
-
-        actionBar.setDisplayHomeAsUpEnabled(true)
+        //actionBar!!.title="Animation"
+//
+        //actionBar.setDisplayHomeAsUpEnabled(true)
 
         //Weiter Button unter Video Player zu PriorityActivity
         val weiter = findViewById<Button>(R.id.buttonWeiter)

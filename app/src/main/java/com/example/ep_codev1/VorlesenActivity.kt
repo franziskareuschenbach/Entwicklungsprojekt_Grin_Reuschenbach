@@ -52,10 +52,11 @@ class VorlesenActivity : AppCompatActivity() {
 
         //Action Bar zurück zur Startseite
         val actionBar = supportActionBar
+        actionBar!!.hide()
 
-        actionBar!!.title="Vorlesen"
-
-        actionBar.setDisplayHomeAsUpEnabled(false)
+        //actionBar!!.title="Vorlesen"
+//
+        //actionBar.setDisplayHomeAsUpEnabled(false)
 
         //Weiter Button unter Video Player zu KarteActivity
         val weiter = findViewById<Button>(R.id.buttonWeiter)
