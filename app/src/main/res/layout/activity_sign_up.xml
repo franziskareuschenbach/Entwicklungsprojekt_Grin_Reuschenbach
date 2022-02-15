@@ -15,17 +15,14 @@
         android:layout_marginBottom="22dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676"
         app:srcCompat="@mipmap/logo_gross" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="310dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="56dp"
         android:layout_marginBottom="44dp"
         android:background="@color/epgrau"
         android:cursorVisible="true"
@@ -38,13 +35,13 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
 
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="310dp"
         android:layout_height="48dp"
-        android:layout_marginStart="44dp"
         android:layout_marginBottom="96dp"
         android:background="@color/epgrau"
         android:ems="10"
@@ -56,18 +53,18 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/buttonAnmelden"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonAnmelden"
         android:layout_width="310dp"
         android:layout_height="51dp"
-        android:layout_marginStart="46dp"
         android:layout_marginBottom="60dp"
         android:text="Anmelden"
         app:backgroundTint="#49AD91"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

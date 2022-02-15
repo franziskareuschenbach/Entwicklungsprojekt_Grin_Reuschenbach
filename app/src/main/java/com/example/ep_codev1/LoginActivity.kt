@@ -3,10 +3,12 @@ package com.example.ep_codev1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class LoginActivity : AppCompatActivity() {
 
@@ -14,12 +16,16 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
         setContentView(R.layout.activity_login)
 
 
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
-        //onStart()
+        onStart()
 
         // Kein Account Button zu SignUp
         val keinAccount = findViewById<Button>(R.id.buttonKeinAccount)
@@ -70,19 +76,17 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    /**Eine Funktion die gedacht ist, aber noch nicht funktioniert**/
-    ////Ist user schon eingeloggt
-    //public override fun onStart() {
-    //    super.onStart()
-    //    // Check if user is signed in (non-null) and update UI accordingly.
-    //    val currentUser = auth.currentUser
-    //    if(currentUser != null){
-    //        reload()
-    //    }
-    //}
-//
-    //private fun reload() {
-    //    TODO("Not yet implemented")
-    //}
-
+    //Ist user schon eingeloggt
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        updateUI(currentUser)
+    }
+    //
+    fun updateUI(currentUser: FirebaseUser?) {
+        if(currentUser != null){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
 }

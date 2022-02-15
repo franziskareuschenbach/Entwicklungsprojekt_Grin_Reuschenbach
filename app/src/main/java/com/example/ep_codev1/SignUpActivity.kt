@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -15,6 +16,10 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
         setContentView(R.layout.activity_sign_up)
 
         //Gibt auth die Infos
@@ -23,9 +28,9 @@ class SignUpActivity : AppCompatActivity() {
         // Wenn man auf Anmelden klickt wird die funktion register ausgeführt
         val anmelden = findViewById<Button>(R.id.buttonAnmelden)
         anmelden.setOnClickListener {
-
-            startActivity(Intent(this, Tutorial :: class.java))  //15.02
-            register()}
+            //startActivity(Intent(this, Tutorial :: class.java))  //15.02 //Acticity gibt es noch nicht???
+            register()
+        }
 
 
         //Action Bar zurück zum Login
@@ -63,10 +68,7 @@ class SignUpActivity : AppCompatActivity() {
             .addOnCompleteListener { task ->
             if (task.isSuccessful){
 
-
-
-
-                startActivity(Intent(this, Tutorial :: class.java)) //15.02
+                //startActivity(Intent(this, Tutorial :: class.java)) //15.02 //Acticity gibt es noch nicht???
                 finish()
             }
             //Bei Fail gibts eine Nachricht basierend auf Fehler

@@ -8,7 +8,7 @@
 
     <View
         android:id="@+id/gr_ne_box"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="89dp"
         android:layout_alignParentTop="true"
         android:background="@color/epgreen"
@@ -21,70 +21,126 @@
         android:layout_width="223dp"
         android:layout_height="34dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="92dp"
         android:layout_marginTop="28dp"
         android:gravity="top"
         android:text="@string/kauen_und_schlucken"
         android:textColor="@color/white"
         android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autoSizeTextType="uniform"/>
 
     <TextView
-        android:id="@+id/haben_sie_n"
-        android:layout_width="382dp"
-        android:layout_height="101dp"
+        android:id="@+id/frage"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="300dp"
+        android:autoSizeMaxTextSize="28dp"
+        android:autoSizeMinTextSize="23dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/frage"
+        android:textColor="@color/epred"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_ne_box" />
+
+    <TextView
+        android:id="@+id/ktext"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:text="@string/haben_sie_nach_ihrem_schlaganfall_probleme_mit_dem_kauen_oder_schlucken"
         android:textColor="@color/epblue"
-        android:textSize="23sp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/frage"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="20dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeStepGranularity="2dp"/>
 
     <TextView
         android:id="@+id/beispiel"
-        android:layout_width="95dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="5dp"
+        android:autoSizeMaxTextSize="28dp"
+        android:autoSizeMinTextSize="23dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
         android:text="@string/beispiel"
         android:textColor="@color/epred"
         android:textSize="23sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kbeispiele"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/ktext" />
+
 
     <TextView
-        android:id="@+id/verschlucke"
-        android:layout_width="369dp"
+        android:id="@+id/kbeispiele"
+        android:layout_width="0dp"
         android:layout_height="132dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeMinTextSize="20dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
         android:text="@string/verschlucken_n_aufsto_en_n_anstregungen_beim_kauen_oder_schlucken"
         android:textColor="@color/epblue"
         android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/ktext" />
 
-    <TextView
-        android:id="@+id/frage"
-        android:layout_width="66dp"
-        android:layout_height="29dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/frage"
-        android:textColor="@color/epred"
-        android:textSize="23sp"
-        android:textStyle="bold"
+    <ImageButton
+        android:id="@+id/vorlesebutton"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/eplightgrey"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/kbeispiele"
+        app:layout_constraintVertical_bias="0.916"
+        app:srcCompat="@mipmap/voicerecognition" />
 
-
+    <ImageButton
+        android:id="@+id/playerbutton"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/eplightgrey"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kbeispiele"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@mipmap/player" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -105,10 +161,11 @@
         android:textColor="@color/epblue"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autoSizeTextType="uniform"/>
 
     <TextView
-        android:id="@+id/icf_b510_14"
+        android:id="@+id/kicf"
         android:layout_width="78dp"
         android:layout_height="19dp"
         android:layout_alignParentTop="true"
@@ -118,29 +175,8 @@
         android:textColor="@color/epblue"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageButton
-        android:id="@+id/playerbutton"
-        android:layout_width="120dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="@color/eplightgrey"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/player" />
-
-    <ImageButton
-        android:id="@+id/vorlesebutton"
-        android:layout_width="120dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="252dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="@color/eplightgrey"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/voicerecognition" />
+        android:autoSizeTextType="uniform"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

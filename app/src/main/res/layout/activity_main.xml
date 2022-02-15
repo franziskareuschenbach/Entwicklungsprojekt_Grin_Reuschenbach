@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#28FFFFFF"
-tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28FFFFFF"
+    tools:context=".MainActivity">
+
 
     <Button
         android:id="@+id/buttonLogOut"
@@ -13,40 +14,45 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#D22D53"
         android:text="Ausloggen"
         android:textColor="@color/white"
-        app:backgroundTint="@null" />
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/start"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/buttonMeineBox"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="233dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/button_bg_round"
         android:padding="15dp"
         android:text="Start"
         app:backgroundTint="#49AD91"
         app:iconTint="#49AD91"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="481dp" />
-
+        app:layout_constraintBottom_toTopOf="@+id/buttonMeineBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="361dp"
+        android:layout_width="345dp"
+        android:layout_height="213dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-4dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="368dp"
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074"
         app:srcCompat="@mipmap/logo_gross" />
 
     <Button
@@ -55,11 +61,13 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#C8C8C8"
         android:text="Meine Box"
-        app:backgroundTint="@null" />
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
-
-
+</androidx.constraintlayout.widget.ConstraintLayout>

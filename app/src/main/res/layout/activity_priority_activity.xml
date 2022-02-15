@@ -29,7 +29,6 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonOk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonErledigt" />
 
@@ -64,12 +63,13 @@
         android:id="@+id/textView"
         android:layout_width="231dp"
         android:layout_height="57dp"
-        android:layout_marginStart="84dp"
         android:layout_marginBottom="16dp"
-        android:text="Ist das Video zutreffend? "
+        android:text="Wie würden Sie die Karte einordnen? "
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonDringend"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
