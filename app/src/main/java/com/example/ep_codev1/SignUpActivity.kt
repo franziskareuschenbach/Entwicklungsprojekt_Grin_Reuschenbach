@@ -29,8 +29,8 @@ class SignUpActivity : AppCompatActivity() {
         val anmelden = findViewById<Button>(R.id.buttonAnmelden)
         anmelden.setOnClickListener {
             //startActivity(Intent(this, Tutorial :: class.java))  //15.02 //Acticity gibt es noch nicht???
-            register()
-        }
+            startActivity(Intent(this, Tutorial :: class.java))  //15.02
+            register()}
 
 
         //Action Bar zurück zum Login
@@ -68,7 +68,7 @@ class SignUpActivity : AppCompatActivity() {
             .addOnCompleteListener { task ->
             if (task.isSuccessful){
 
-                //startActivity(Intent(this, Tutorial :: class.java)) //15.02 //Acticity gibt es noch nicht???
+                startActivity(Intent(this, Tutorial :: class.java)) //15.02 //Acticity gibt es noch nicht???
                 finish()
             }
             //Bei Fail gibts eine Nachricht basierend auf Fehler
