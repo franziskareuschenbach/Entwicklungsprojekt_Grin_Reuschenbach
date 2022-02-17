@@ -1,4 +1,4 @@
-package com.example.ep_codev1
+package com.example.ep_codev1.vorlesen_activities
 
 import android.content.Intent
 import android.net.Uri
@@ -10,6 +10,8 @@ import android.widget.Button
 import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
+import com.example.ep_codev1.karte.KarteActivity
+import com.example.ep_codev1.R
 
 class VorlesenActivity : AppCompatActivity() {
 

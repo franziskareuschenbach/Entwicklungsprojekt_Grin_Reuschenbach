@@ -1,4 +1,4 @@
-package com.example.ep_codev1
+package com.example.ep_codev1.animation_activities
 
 import android.content.Intent
 import android.net.Uri
@@ -10,6 +10,8 @@ import android.widget.Button
 import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
+import com.example.ep_codev1.PriorityActivity
+import com.example.ep_codev1.R
 
 class AnimationActivity : AppCompatActivity() {
 
@@ -26,7 +28,7 @@ class AnimationActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_animation)
 
-        val videoView = findViewById<View>(R.id. videoView) as VideoView?
+        val videoView = findViewById<View>(R.id.videoView) as VideoView?
 
         if (mediaController == null){
             mediaController = MediaController(this)
