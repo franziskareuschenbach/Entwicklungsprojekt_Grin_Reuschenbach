@@ -13,13 +13,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EP_CodeV1">
         <activity
+            android:name=".vorlesen_activities.VorlesenActivity4"
+            android:exported="false"
+            android:parentActivityName=".karte.KarteActivity"/>
+        <activity
+            android:name=".vorlesen_activities.VorlesenActivity3"
+            android:exported="false"
+            android:parentActivityName=".karte.KarteActivity"/>
+        <activity
+            android:name=".vorlesen_activities.VorlesenActivity2"
+            android:exported="false"
+            android:parentActivityName=".karte.KarteActivity"/>
+        <activity
+            android:name=".vorlesen_activities.VorlesenActivity1"
+            android:exported="false"
+            android:parentActivityName=".karte.KarteActivity"/>
+        <activity
+            android:name=".meine_box_activities.ErledigtActivity"
+            android:exported="false"
+            android:parentActivityName=".meine_box_activities.MeineBoxActivity"/>
+        <activity
+            android:name=".meine_box_activities.SpaeterActivity"
+            android:exported="false"
+            android:parentActivityName=".meine_box_activities.MeineBoxActivity"/>
+        <activity
+            android:name=".meine_box_activities.OkActivity"
+            android:exported="false"
+            android:parentActivityName=".meine_box_activities.MeineBoxActivity"/>
+        <activity
+            android:name=".DringendActivity"
+            android:exported="false"
+            android:parentActivityName=".meine_box_activities.MeineBoxActivity"/>
+        <activity
             android:name=".Tutorial"
             android:exported="false" />
         <activity
-            android:name=".VorlesenActivity"
+            android:name=".vorlesen_activities.VorlesenActivity"
             android:exported="false" />
         <activity
-            android:name=".KarteActivity"
+            android:name=".karte.KarteActivity"
+            android:launchMode="singleTask"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
@@ -27,17 +60,17 @@
             android:exported="false"
             android:parentActivityName=".LoginActivity" />
         <activity
-            android:name=".MeineBoxActivity"
+            android:name=".meine_box_activities.MeineBoxActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PriorityActivity"
             android:exported="false"
-            android:parentActivityName=".AnimationActivity" />
+            android:parentActivityName=".animation_activities.AnimationActivity" />
         <activity
-            android:name=".AnimationActivity"
+            android:name=".animation_activities.AnimationActivity"
             android:exported="false"
-            android:parentActivityName=".KarteActivity" />
+            android:parentActivityName=".karte.KarteActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
