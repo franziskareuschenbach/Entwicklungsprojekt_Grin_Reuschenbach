@@ -22,7 +22,7 @@
 
     <Button
         android:id="@+id/buttonDringendBox"
-        android:layout_width="305dp"
+        android:layout_width="250dp"
         android:layout_height="56dp"
         android:layout_marginTop="132dp"
         android:layout_marginBottom="10dp"
@@ -31,12 +31,13 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonErledigtBox"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonErledigtBox"
-        android:layout_width="305dp"
+        android:layout_width="250dp"
         android:layout_height="56dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#007DF0"
@@ -44,12 +45,13 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonSpäterBox"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonDringendBox" />
 
     <Button
         android:id="@+id/buttonSpäterBox"
-        android:layout_width="305dp"
+        android:layout_width="250dp"
         android:layout_height="56dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#B60E87"
@@ -57,12 +59,13 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonOkBox"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonErledigtBox" />
 
     <Button
         android:id="@+id/buttonOkBox"
-        android:layout_width="305dp"
+        android:layout_width="250dp"
         android:layout_height="56dp"
         android:layout_marginBottom="220dp"
         android:backgroundTint="#49A663"
@@ -70,8 +73,52 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSpäterBox" />
 
+    <ImageButton
+        android:id="@+id/frageButtonDringendBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonDringendBox"
+        app:layout_constraintTop_toTopOf="@+id/buttonDringendBox"
+        app:srcCompat="@mipmap/questionmark" />
+
+    <ImageButton
+        android:id="@+id/frageButtonErledigtBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonErledigtBox"
+        app:layout_constraintTop_toTopOf="@+id/buttonErledigtBox"
+        app:srcCompat="@mipmap/questionmark" />
+
+    <ImageButton
+        android:id="@+id/frageButtonSpaeterBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonSpäterBox"
+        app:layout_constraintTop_toTopOf="@+id/buttonSpäterBox"
+        app:srcCompat="@mipmap/questionmark" />
+
+    <ImageButton
+        android:id="@+id/frageButtonOkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonOkBox"
+        app:layout_constraintTop_toTopOf="@+id/buttonOkBox"
+        app:srcCompat="@mipmap/questionmark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

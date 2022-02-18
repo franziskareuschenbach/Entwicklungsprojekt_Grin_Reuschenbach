@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.ImageButton
+import androidx.appcompat.app.AlertDialog
 import com.example.ep_codev1.karte.KarteActivity
 import com.example.ep_codev1.liste.ListenItem
 import com.example.ep_codev1.meine_box_activities.OkActivity
@@ -51,6 +53,54 @@ class PriorityActivity : AppCompatActivity() {
         okButton.setOnClickListener{
             OkActivity.OkListe.addListeOk(ListenItem("Schlaf", "ICF:b134"))
             zurueckZuKarteActivity()
+        }
+
+        val infoDringend = findViewById<ImageButton>(R.id.frageButtonDringend)
+
+        infoDringend.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Dringend")
+            builder.setMessage("Sie sind betroffen und möchten kurzfristig eine Lösung herbeiführen.")
+
+            val alertDialog :AlertDialog = builder.create()
+            alertDialog.setCancelable(true)
+            alertDialog.show()
+        }
+
+        val infoErledigt = findViewById<ImageButton>(R.id.frageButtonErledigt)
+
+        infoErledigt.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Erledigt")
+            builder.setMessage("Sie waren mal betroffen, das Problem besteht jedoch nicht mehr.")
+
+            val alertDialog :AlertDialog = builder.create()
+            alertDialog.setCancelable(true)
+            alertDialog.show()
+        }
+
+        val infoSpaeter = findViewById<ImageButton>(R.id.frageButtonSpaeter)
+
+        infoSpaeter.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Später")
+            builder.setMessage("Sie sind betroffen, jedoch ist keine kurfristige Lösung möglich oder nötig.")
+
+            val alertDialog :AlertDialog = builder.create()
+            alertDialog.setCancelable(true)
+            alertDialog.show()
+        }
+
+        val infoOk = findViewById<ImageButton>(R.id.frageButtonOk)
+
+        infoOk.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Ok")
+            builder.setMessage("Sie sind nicht betroffen.")
+
+            val alertDialog :AlertDialog = builder.create()
+            alertDialog.setCancelable(true)
+            alertDialog.show()
         }
 
         val actionBar = supportActionBar
