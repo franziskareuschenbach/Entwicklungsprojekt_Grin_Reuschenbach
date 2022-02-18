@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ep_codev1.R
-import com.example.ep_codev1.animation_activities.AnimationActivity
+import com.example.ep_codev1.animation_activities.*
 import com.example.ep_codev1.vorlesen_activities.*
 import kotlinx.android.synthetic.main.activity_itemkarte.view.*
 
@@ -20,14 +20,12 @@ class KarteAdapter(val mKarten : List<KarteItem>): RecyclerView.Adapter<KarteAda
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val karte = mKarten[position]
-        //println("KarteAdapter $position")
 
         holder.itemViews.kueberschrift.text = karte.ueberschrift
         holder.itemViews.kktext.text = karte.erklaerungText
         holder.itemViews.kkbeispiele.text = karte.beispiele
         holder.itemViews.kkicf.text = karte.icf
 
-        //holder.itemViews.vorlesebutton.parent
     }
 
     override fun getItemCount() = mKarten.size
@@ -37,7 +35,7 @@ class KarteAdapter(val mKarten : List<KarteItem>): RecyclerView.Adapter<KarteAda
         var intent = Intent()
         init {
             itemViews.kvorlesebutton.setOnClickListener {
-                println(adapterPosition)
+                // Je nachdem auf welcher Karte man den Button klickt, kommt man auf das jeweilige Video
                 when(adapterPosition) {
                     0 -> {
                         intent = Intent(itemViews.context, VorlesenActivity::class.java)
@@ -58,7 +56,23 @@ class KarteAdapter(val mKarten : List<KarteItem>): RecyclerView.Adapter<KarteAda
                 itemViews.context.startActivity(intent)
             }
             itemViews.kplayerbutton.setOnClickListener {
-                intent = Intent(itemViews.context, AnimationActivity::class.java)
+                when(adapterPosition) {
+                    0 -> {
+                        intent = Intent(itemViews.context, AnimationActivity::class.java)
+                    }
+                    1 ->{
+                        intent = Intent(itemViews.context, AnimationActivity1::class.java)
+                    }
+                    2 ->{
+                        intent = Intent(itemViews.context, AnimationActivity2::class.java)
+                    }
+                    3 ->{
+                        intent = Intent(itemViews.context, AnimationActivity3::class.java)
+                    }
+                    4 ->{
+                        intent = Intent(itemViews.context, AnimationActivity4::class.java)
+                    }
+                }
                 itemViews.context.startActivity(intent)
             }
         }
