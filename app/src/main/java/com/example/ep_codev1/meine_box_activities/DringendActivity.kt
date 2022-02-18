@@ -8,7 +8,6 @@ import com.example.ep_codev1.liste.ListeAdapter
 import com.example.ep_codev1.liste.ListenItem
 import kotlinx.android.synthetic.main.activity_rvdringend.*
 
-
 class DringendActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,12 +19,11 @@ class DringendActivity : AppCompatActivity() {
 
         val listen = DringendListe
 
-
         rvDringend.layoutManager = LinearLayoutManager(this)
         rvDringend.adapter = ListeAdapter(listen.listend)
 
         val actionBar = supportActionBar
-        actionBar!!.title="DRINGEND"
+        actionBar!!.title="Dringend"
         actionBar.setDisplayHomeAsUpEnabled(true)
     }
     object DringendListe{

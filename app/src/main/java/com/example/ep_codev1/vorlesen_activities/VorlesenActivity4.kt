@@ -16,9 +16,7 @@ import com.example.ep_codev1.R
 class VorlesenActivity4 : AppCompatActivity() {
 
     var videoView : VideoView? = null
-
     var mediaController : MediaController? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,19 +33,18 @@ class VorlesenActivity4 : AppCompatActivity() {
         }
 
         videoView!!.setMediaController(mediaController)
+        videoView.setVideoURI(Uri.parse("android.resource://"+packageName + "/" + R.raw.schmerzvorlesen))
 
-        videoView!!.setVideoURI(Uri.parse("android.resource://"+packageName + "/" + R.raw.schmerzvorlesen))
-
-        videoView!!.requestFocus()
+        videoView.requestFocus()
 
         //start Video
-        videoView!!.start()
+        videoView.start()
 
-        videoView!!.setOnCompletionListener {
+        videoView.setOnCompletionListener {
             //Toast.makeText(applicationContext,"VideoEnd", Toast.LENGTH_LONG).show()
         }
 
-        videoView!!.setOnErrorListener { mediaPlayer, i, i2 ->
+        videoView.setOnErrorListener { mediaPlayer, i, i2 ->
             Toast.makeText(applicationContext, "Error Occured", Toast.LENGTH_LONG).show()
             false
         }
@@ -55,10 +52,6 @@ class VorlesenActivity4 : AppCompatActivity() {
         //Action Bar zurück zur Startseite
         val actionBar = supportActionBar
         actionBar!!.hide()
-
-        //actionBar!!.title="Vorlesen"
-//
-        //actionBar.setDisplayHomeAsUpEnabled(false)
 
         //Weiter Button unter Video Player zu KarteActivity
         val weiter = findViewById<Button>(R.id.buttonWeiter)

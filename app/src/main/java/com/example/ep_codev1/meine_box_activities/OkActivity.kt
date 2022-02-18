@@ -24,9 +24,7 @@ class OkActivity : AppCompatActivity() {
         rvDringend.adapter = ListeAdapter(listen.listend)
 
         val actionBar = supportActionBar
-
-        actionBar!!.title="OK"
-
+        actionBar!!.title="Ok"
         actionBar.setDisplayHomeAsUpEnabled(true)
     }
 

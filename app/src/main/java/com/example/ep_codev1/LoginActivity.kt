@@ -41,8 +41,6 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-
-
     fun login() {
         //Check ob email leer
         val email = findViewById<EditText>(R.id.editTextTextEmailAddress)
@@ -79,7 +77,6 @@ class LoginActivity : AppCompatActivity() {
     //Ist user schon eingeloggt
     public override fun onStart() {
         super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         updateUI(currentUser)
     }

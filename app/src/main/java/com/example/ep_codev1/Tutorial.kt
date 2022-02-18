@@ -22,19 +22,12 @@ class Tutorial : AppCompatActivity() {
 
         val videoViewTutorial = findViewById<View>(R.id.videoView2) as VideoView?
 
-
-
         val beendenTutorial = findViewById<Button>(R.id.buttonBeenden)    // on click event
 
         beendenTutorial.setOnClickListener {
             //Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, MainActivity :: class.java))
         }
-        val actionBarTutorial = supportActionBar
-
-        actionBarTutorial!!.title="Tutorial"
-
-
 
 
         if (mediaController == null) {
@@ -44,18 +37,18 @@ class Tutorial : AppCompatActivity() {
 
         videoViewTutorial!!.setMediaController(mediaController)
 
-        videoViewTutorial!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.tutorial))
+        videoViewTutorial.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.tutorial))
 
-        videoViewTutorial!!.requestFocus()
+        videoViewTutorial.requestFocus()
 
         //start Video
-        videoViewTutorial!!.start()
+        videoViewTutorial.start()
 
-        videoViewTutorial!!.setOnCompletionListener {
-            Toast.makeText(applicationContext, "VideoEnd", Toast.LENGTH_LONG).show()
-        }
+        //videoViewTutorial.setOnCompletionListener {
+        //    Toast.makeText(applicationContext, "VideoEnd", Toast.LENGTH_LONG).show()
+        //}
 
-        videoViewTutorial!!.setOnErrorListener { mediaPlayer, i, i2 ->
+        videoViewTutorial.setOnErrorListener { mediaPlayer, i, i2 ->
             Toast.makeText(applicationContext, "Error Occured", Toast.LENGTH_LONG).show()
             false
         }
@@ -67,12 +60,5 @@ class Tutorial : AppCompatActivity() {
 
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        //Weiter Button unter Video Player zu PriorityActivity
-        val beenden = findViewById<Button>(R.id.buttonBeenden)
-
-        beenden.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

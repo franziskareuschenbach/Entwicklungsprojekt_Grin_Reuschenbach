@@ -26,10 +26,6 @@ class PriorityActivity : AppCompatActivity() {
         dringendButton.setOnClickListener {
             //Dies simuliert, was wir mit den Knöpfen bezwecken wollen
             DringendActivity.DringendListe.addListeDringend(ListenItem("Kauen und Schlucken", "ICF:b510"))
-            //KarteActivity.GespeicherteKarten.karteloeschen(
-            //    KarteItem("Kauen und Schlucken", "Haben Sie nach Ihrem Schlaganfall Probleme mit dem Kauen und Schlucken?",
-            //        "- Verschlucken\n- Aufstoßen\n- Anstregungen beim Kauen oder Schlucken", "ICF:b510")
-            //)
             zurueckZuKarteActivity()
         }
 
@@ -42,10 +38,6 @@ class PriorityActivity : AppCompatActivity() {
         val spaeterButton = findViewById<Button>(R.id.buttonSpäter)
         spaeterButton.setOnClickListener{
             SpaeterActivity.SpaeterListe.addListeSpaeter(ListenItem("Stabilität in Armen und Beinen", "ICF:b715"))
-            // KarteActivity.GespeicherteKarten.karteloeschen(
-            //     KarteItem("Stabilität in Armen und Beinen", "Haben Sie nach Ihrem Schlaganfall Probleme mit der Stabilität in Ihren Armen oder Beinen?",
-            //         "- Wegknicken der Beine beim Stehen oder Gehen\n- Instabilität der Schulter beim Abstützen", "ICF:b715")
-            // )
             zurueckZuKarteActivity()
         }
 

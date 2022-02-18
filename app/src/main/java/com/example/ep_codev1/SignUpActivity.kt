@@ -30,8 +30,7 @@ class SignUpActivity : AppCompatActivity() {
         // Wenn man auf Anmelden klickt wird die funktion register ausgeführt
         val anmelden = findViewById<Button>(R.id.buttonAnmelden)
         anmelden.setOnClickListener {
-            //startActivity(Intent(this, Tutorial :: class.java))  //15.02 //Acticity gibt es noch nicht???
-            startActivity(Intent(this, Tutorial :: class.java))  //15.02
+            //startActivity(Intent(this, Tutorial :: class.java))  //15.02
             register()}
 
 
@@ -40,7 +39,6 @@ class SignUpActivity : AppCompatActivity() {
         actionBar!!.title="Sign-Up"
         actionBar.setDisplayHomeAsUpEnabled(true)
     }
-
 
     fun register(){
         //Check ob Email eingetragen wurde
@@ -69,7 +67,6 @@ class SignUpActivity : AppCompatActivity() {
             //Wenn task erfolgreich, dann uebergang zu MainActivity
             .addOnCompleteListener { task ->
             if (task.isSuccessful){
-
                 startActivity(Intent(this, Tutorial :: class.java)) //15.02 //Acticity gibt es noch nicht???
                 finish()
             }

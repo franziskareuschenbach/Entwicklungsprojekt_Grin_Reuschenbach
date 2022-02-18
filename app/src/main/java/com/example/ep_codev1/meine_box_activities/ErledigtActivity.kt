@@ -24,9 +24,7 @@ class ErledigtActivity : AppCompatActivity() {
         rvDringend.adapter = ListeAdapter(listen.listend)
 
         val actionBar = supportActionBar
-
-        actionBar!!.title="ERLEDIGT"
-
+        actionBar!!.title="Erledigt"
         actionBar.setDisplayHomeAsUpEnabled(true)
     }
 

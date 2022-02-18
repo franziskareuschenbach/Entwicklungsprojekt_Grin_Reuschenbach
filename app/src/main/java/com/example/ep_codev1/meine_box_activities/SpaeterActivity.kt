@@ -24,9 +24,7 @@ class SpaeterActivity : AppCompatActivity() {
         rvDringend.adapter = ListeAdapter(listen.listend)
 
         val actionBar = supportActionBar
-
-        actionBar!!.title="SPÄTER"
-
+        actionBar!!.title="Später"
         actionBar.setDisplayHomeAsUpEnabled(true)
     }
 

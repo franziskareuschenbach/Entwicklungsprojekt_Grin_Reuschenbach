@@ -26,6 +26,7 @@ class KarteActivity : AppCompatActivity() {
         snapHelper.attachToRecyclerView(rvKarte)
     }
 
+    //Die Kartenliste
     object GespeicherteKarten{
         val karten = mutableListOf(
             KarteItem("Kauen und Schlucken", "Haben Sie nach Ihrem Schlaganfall Probleme mit dem Kauen und Schlucken?",

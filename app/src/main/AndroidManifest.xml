@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EP_CodeV1">
         <activity
+            android:name=".animation_activities.AnimationActivity1"
+            android:exported="false"/>
+        <activity
+            android:name=".animation_activities.AnimationActivity2"
+            android:exported="false"/>
+        <activity
+            android:name=".animation_activities.AnimationActivity3"
+            android:exported="false"/>
+        <activity
+            android:name=".animation_activities.AnimationActivity4"
+            android:exported="false"/>
+        <activity
             android:name=".vorlesen_activities.VorlesenActivity4"
             android:exported="false"
             android:parentActivityName=".karte.KarteActivity"/>
