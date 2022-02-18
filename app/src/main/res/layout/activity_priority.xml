@@ -15,9 +15,9 @@
         android:text="Erledigt"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonSpäter"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDringend"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonDringend"
         app:layout_constraintTop_toBottomOf="@+id/buttonDringend" />
 
     <Button
@@ -29,9 +29,9 @@
         android:text="Später"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonOk"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonErledigt"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonErledigt"
         app:layout_constraintTop_toBottomOf="@+id/buttonErledigt" />
 
     <Button
@@ -44,9 +44,9 @@
         android:text="Dringend"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonErledigt"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -58,9 +58,9 @@
         android:text="Ok"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSpäter"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonSpäter"
         app:layout_constraintTop_toBottomOf="@+id/buttonSpäter" />
 
     <TextView

@@ -30,9 +30,8 @@
         android:text="Dringend"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonErledigtBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -44,9 +43,9 @@
         android:text="Erledigt"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonSpäterBox"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDringendBox"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonDringendBox"
         app:layout_constraintTop_toBottomOf="@+id/buttonDringendBox" />
 
     <Button
@@ -58,9 +57,9 @@
         android:text="Später"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonOkBox"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonErledigtBox"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonErledigtBox"
         app:layout_constraintTop_toBottomOf="@+id/buttonErledigtBox" />
 
     <Button
@@ -72,9 +71,9 @@
         android:text="Ok"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSpäterBox"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonSpäterBox"
         app:layout_constraintTop_toBottomOf="@+id/buttonSpäterBox" />
 
     <ImageButton
