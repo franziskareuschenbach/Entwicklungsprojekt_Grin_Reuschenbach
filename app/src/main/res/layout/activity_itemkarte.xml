@@ -24,7 +24,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/kueberschrift"
+                android:id="@+id/headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -59,8 +59,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/kgruenebox" />
 
             <TextView
-                android:id="@+id/kktext"
-                android:layout_width="wrap_content"
+                android:id="@+id/question"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="15dp"
@@ -96,16 +96,16 @@
                 android:textColor="@color/epred"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/kkbeispiele"
+                app:layout_constraintBottom_toTopOf="@+id/examples"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/kktext"
+                app:layout_constraintTop_toBottomOf="@+id/question"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/kkbeispiele"
-                android:layout_width="wrap_content"
+                android:id="@+id/examples"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="15dp"
@@ -121,7 +121,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/kktext" />
+                app:layout_constraintTop_toBottomOf="@+id/question" />
 
             <ImageButton
                 android:id="@+id/kvorlesebutton"
@@ -134,7 +134,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/kkbeispiele"
+                app:layout_constraintTop_toBottomOf="@+id/examples"
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@mipmap/voicerecognition" />
 
@@ -149,7 +149,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.752"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/kkbeispiele"
+                app:layout_constraintTop_toBottomOf="@+id/examples"
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@mipmap/player" />
 
@@ -176,7 +176,7 @@
                 android:autoSizeTextType="uniform"/>
 
             <TextView
-                android:id="@+id/kkicf"
+                android:id="@+id/icfCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"

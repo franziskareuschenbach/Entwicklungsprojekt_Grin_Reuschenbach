@@ -10,7 +10,7 @@ import com.example.ep_codev1.animation_activities.*
 import com.example.ep_codev1.vorlesen_activities.*
 import kotlinx.android.synthetic.main.activity_itemkarte.view.*
 
-class KarteAdapter(val mKarten : List<KarteItem>): RecyclerView.Adapter<KarteAdapter.ViewHolder>() {
+class CardAdapter(val mCards : List<CardItem>): RecyclerView.Adapter<CardAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context)
@@ -19,16 +19,16 @@ class KarteAdapter(val mKarten : List<KarteItem>): RecyclerView.Adapter<KarteAda
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val karte = mKarten[position]
+        val showedCard = mCards[position]
 
-        holder.itemViews.kueberschrift.text = karte.ueberschrift
-        holder.itemViews.kktext.text = karte.erklaerungText
-        holder.itemViews.kkbeispiele.text = karte.beispiele
-        holder.itemViews.kkicf.text = karte.icf
+        holder.itemViews.headline.text = showedCard.ueberschrift
+        holder.itemViews.question.text = showedCard.erklaerungText
+        holder.itemViews.examples.text = showedCard.beispiele
+        holder.itemViews.icfCode.text = showedCard.icf
 
     }
 
-    override fun getItemCount() = mKarten.size
+    override fun getItemCount() = mCards.size
 
 
     inner class ViewHolder(val itemViews: View) : RecyclerView.ViewHolder(itemViews) {

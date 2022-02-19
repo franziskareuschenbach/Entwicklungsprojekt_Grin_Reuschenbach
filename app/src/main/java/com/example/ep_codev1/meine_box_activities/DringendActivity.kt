@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.ep_codev1.liste.ListeAdapter
-import com.example.ep_codev1.liste.ListenItem
+import com.example.ep_codev1.liste.ListAdapter
+import com.example.ep_codev1.liste.ListItem
 import kotlinx.android.synthetic.main.activity_rvdringend.*
 
 class DringendActivity : AppCompatActivity() {
@@ -20,17 +20,17 @@ class DringendActivity : AppCompatActivity() {
         val listen = DringendListe
 
         rvDringend.layoutManager = LinearLayoutManager(this)
-        rvDringend.adapter = ListeAdapter(listen.listend)
+        rvDringend.adapter = ListAdapter(listen.listend)
 
         val actionBar = supportActionBar
         actionBar!!.title="Dringend"
         actionBar.setDisplayHomeAsUpEnabled(true)
     }
     object DringendListe{
-        var listend = mutableListOf<ListenItem>()
+        var listend = mutableListOf<ListItem>()
 
-        fun addListeDringend(listenItem : ListenItem) {
-            listend.add(listenItem)
+        fun addListeDringend(listItem : ListItem) {
+            listend.add(listItem)
         }
     }
 }

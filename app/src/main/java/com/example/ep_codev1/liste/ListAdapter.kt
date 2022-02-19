@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ep_codev1.R
 import kotlinx.android.synthetic.main.activity_itempriority.view.*
 
-class ListeAdapter(val mListen : List<ListenItem>): RecyclerView.Adapter<ListeAdapter.ListViewHolder>() {
+class ListAdapter(val mLists : List<ListItem>): RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         return ListViewHolder(
@@ -17,14 +17,14 @@ class ListeAdapter(val mListen : List<ListenItem>): RecyclerView.Adapter<ListeAd
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val liste = mListen[position]
+        val list = mLists[position]
 
-        holder.itemListViews.ipueberschrift.text = liste.namel
-        holder.itemListViews.ipicf.text = liste.icfl
+        holder.itemListViews.ipHeadline.text = list.namel
+        holder.itemListViews.ipIcf.text = list.icfl
 
     }
 
-    override fun getItemCount() = mListen.size
+    override fun getItemCount() = mLists.size
 
 
 

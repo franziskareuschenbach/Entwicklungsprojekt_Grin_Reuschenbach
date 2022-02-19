@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import com.example.ep_codev1.karte.KarteActivity
-import com.example.ep_codev1.liste.ListenItem
+import com.example.ep_codev1.liste.ListItem
 import com.example.ep_codev1.meine_box_activities.OkActivity
 import com.example.ep_codev1.meine_box_activities.SpaeterActivity
 
@@ -25,7 +25,7 @@ class PriorityActivity : AppCompatActivity() {
         val dringendButton = findViewById<Button>(R.id.buttonDringend)
         dringendButton.setOnClickListener {
             //Dies simuliert, was wir mit den Knöpfen bezwecken wollen
-            DringendActivity.DringendListe.addListeDringend(ListenItem("Kauen und Schlucken", "ICF:b510"))
+            DringendActivity.DringendListe.addListeDringend(ListItem("Kauen und Schlucken", "ICF:b510"))
             zurueckZuKarteActivity()
         }
 
@@ -37,13 +37,13 @@ class PriorityActivity : AppCompatActivity() {
 
         val spaeterButton = findViewById<Button>(R.id.buttonSpäter)
         spaeterButton.setOnClickListener{
-            SpaeterActivity.SpaeterListe.addListeSpaeter(ListenItem("Stabilität in Armen und Beinen", "ICF:b715"))
+            SpaeterActivity.SpaeterListe.addListeSpaeter(ListItem("Stabilität in Armen und Beinen", "ICF:b715"))
             zurueckZuKarteActivity()
         }
 
         val okButton = findViewById<Button>(R.id.buttonOk)
         okButton.setOnClickListener{
-            OkActivity.OkListe.addListeOk(ListenItem("Schlaf", "ICF:b134"))
+            OkActivity.OkListe.addListeOk(ListItem("Schlaf", "ICF:b134"))
             zurueckZuKarteActivity()
         }
 
