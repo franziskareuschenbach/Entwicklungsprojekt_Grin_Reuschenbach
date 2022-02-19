@@ -19,4 +19,4 @@ Dies machen Sie, indem Sie in den Informationen über Ihr Gerät 7-10 mal auf di
 Nun sollten Sie in den Systemeinstellungen den Unterpunkt Entwickleroptionen aussuchen.
 In diesen Einstellungen scrollen sie dann runter, bis Sie die Option "USB-Debugging" sehen. Die Funktion togglen Sie auf An.
 Jetzt müssen Sie das Gerät mit Ihrem PC oder Laptop mittels USB verbinden. Android Studio sollte Ihr gerät direkt erkennen und auf dem Smartphone sollte die Nachricht 
-"USB-Debugging zulassen?" aufploppen. Diese müssen Sie bestätigen und dann wird die App auf Ihrem Gerät geladen.
+"USB-Debugging zulassen?" aufploppen. Diese müssen Sie bestätigen, in Android Studio auf den Grünen Pfeil klicken und dann wird die App auf Ihrem Gerät geladen.
